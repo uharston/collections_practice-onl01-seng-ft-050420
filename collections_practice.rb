@@ -44,3 +44,15 @@ def find_a(array)
   end
   new
 end
+
+def add_s(array)
+  new = []
+  array.each_with_index do |element, index|
+    if index == 1
+      new <<element
+    else
+      new << element + "s"
+    end
+  end
+  return new
+end
