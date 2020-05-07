@@ -38,11 +38,15 @@ end
 def find_a(array)
   new = []
   array.each do |string|
-    if string.start_with?('A')
+    if string.start_with?('a')
         new << string
     end
   end
   new
+end
+
+def sum_array(array)
+  array.inject(:+)
 end
 
 def add_s(array)
