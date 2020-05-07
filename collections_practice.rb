@@ -60,3 +60,8 @@ def add_s(array)
   end
   return new
 end
+
+def swap_elements(array)
+  array[1], array[2] = array[2], array[1]
+  array
+end
